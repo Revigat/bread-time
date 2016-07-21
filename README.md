@@ -1,3 +1,3 @@
 # bread-time
 
-Projeto em andamento. Vaza.
+Projeto em andamento. 
