@@ -1,0 +1,54 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+    <!--<head>-->
+        <!--<meta charset="utf-8">-->
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+        <!--<title>PushXDK - Notificações no dispositivo</title>-->
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--</head>-->
+    <!--<body>-->
+        <div class="jumbotron" style="padding:25px">
+            <div class="container">
+                <h1>PushXDK</h1>
+                <p>Sistema de envio de notificações push via Intel XDK e PHP</p>
+            </div>
+        </div>
+        <div class="container">
+            <form method="POST" action="pushandroid.php">
+                <!--<div class="form-group">-->
+                    <!--<label for="apiKey">Chave da API (Cloud Message Service)</label>-->
+                    <!--<input type="hidden" id="apiKey" name="apiKey" class="form-control"-->
+                           <!--placeholder="Chave da API para envio de push via serviço de Cloud Message..." required="required"/>-->
+                <!--</div>-->
+                <div class="form-group">
+                    <label for="devices">Dispositivos-alvo (tokens)</label>
+                    <textarea name="devices" id="devices" class="form-control"
+                              placeholder="Digite o token dos dispotivos-alvo (separados por vírgula)..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="title">Título do push</label>
+                    <input type="text" id="title" name="title" class="form-control" placeholder="Digite o título da mensagem..."
+                           required="required"/>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem do push</label>
+                    <textarea name="message" id="message" class="form-control" placeholder="Digite o conteúdo da mensagem..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-info" style="float:right">ENVIAR PUSH</button>
+            </form>
+        </div>
+    <!--</body>-->
+<!--</html>-->
